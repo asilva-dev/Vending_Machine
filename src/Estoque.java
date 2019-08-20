@@ -5,11 +5,10 @@ public class Estoque {
     Categoria categoria;
     Subcategoria subcategoria;
     Integer quantidade;
-
+    
     public Produto getProduto() {
         return this.produto;
     }
-
     public void setProduto(Produto produto){
         this.produto = produto;
     }
@@ -17,7 +16,6 @@ public class Estoque {
     public  Categoria getCategoria(){
         return  this.categoria;
     }
-
     public void  setCategoria(Categoria categoria){
         this.categoria = categoria;
     }
@@ -41,7 +39,4 @@ public class Estoque {
 
         this.quantidade = quantidade;
     }
-
-
-
 }
