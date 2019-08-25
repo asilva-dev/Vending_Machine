@@ -14,8 +14,14 @@ public class CidadeTest {
         Estado estado = new Estado(); //Objeto
         estado.nome = "São Paulo";
         estado.sigla = "SP";
-
         cidade.estado = estado;
+
+        cidade.setNome(cidade);
+        assertThat(cidade.getNome(), is("Guarulhos"));
+
+        cidade.setEstado(cidade);
+        assertThat(cidade.getEstado(), is(estado));
+
     }
 
     @Test
