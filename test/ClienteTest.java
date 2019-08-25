@@ -17,8 +17,11 @@ public class ClienteTest {
         cidade.nome = "Guarulhos";
         cliente.estado = estado;
         cliente.cidade = cidade;
+
         cliente.setEstado(estado);
         cliente.setCidade(cidade);
+
+
         assertThat(cliente.nome, is("Lívia Eduarda"));
         assertThat(cliente.pais, is("Brasil"));
         assertThat(cliente.idade, is(11));

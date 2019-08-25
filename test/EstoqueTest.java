@@ -1,28 +1,31 @@
 import org.junit.Test;
-
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
-public class EstoqueTest {
+public class EstoqueTest{
+
     @Test
     public void CriarProdutoEstoque() {
-            Estoque estoque = new Estoque();
             Produto produto = new Produto(); //novo produto da classe "Produto"
-            Categoria categoria = new Categoria(); //novo produto da classe "Categoria"
-            Subcategoria subcategoria = new Subcategoria(); //novo produto da classe "Subcategoria"
-
-            //Criando o produto e atribuindo ao estoque
             produto.nome = "Suco de Frutas Vermelhas";
+
+            Estoque estoque = new Estoque();
             estoque.produto = produto;
-            estoque.quantidade = 5;
+
+            Categoria categoria = new Categoria(); //novo produto da classe "Categoria"
             categoria.tipo = "Alimenticio";
+
+            Subcategoria subcategoria = new Subcategoria(); //novo produto da classe "Subcategoria"
             subcategoria.unidMedida = "Liquido";
+
+            estoque.quantidade = 5;
 
             //Testando o "set" do produto {Set modifica o atributo}
             estoque.setProduto(produto);
             estoque.setCategoria(categoria);
             estoque.setSubcategoria(subcategoria);
-            estoque.setQuantidade(estoque.quantidade);
+            Integer quantidade = 0;
+            estoque.setQuantidade(quantidade);
 
             //Testando o "get" do produto {Get acessa o atributo 'pega'}
             assertThat(estoque.getProduto().nome, is("Suco de Frutas Vermelhas"));

@@ -17,6 +17,7 @@ public class PedidoTest {
 
         pedido.setProduto(produto);
         pedido.setCliente(cliente);
+
         assertThat(pedido.getCliente().nome,is("Livia"));
         assertThat(pedido.getProduto().nome, is("Suco de Frutas Vermelhas"));
     }

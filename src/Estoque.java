@@ -21,22 +21,17 @@ public class Estoque {
     }
 
     public Subcategoria getSubcategoria(){
-
         return  this.subcategoria;
     }
-
     public void setSubcategoria(Subcategoria subcategoria){
-
         this.subcategoria = subcategoria;
     }
 
     public Integer getQuantidade() {
-
         return this.quantidade;
     }
 
     public void setQuantidade(Integer quantidade) {
-
         this.quantidade = quantidade;
     }
 }
