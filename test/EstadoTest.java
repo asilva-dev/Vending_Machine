@@ -8,8 +8,16 @@ public class EstadoTest {
     public void CriarEstado(){
         Estado estado = new Estado(); //Objeto Estado
         estado.nome = "Sao Paulo";
-        assertThat(estado.nome, is("Sao Paulo"));
         estado.sigla = "SP";
+
+        String nome = "Sao Paulo";
+        estado.setNome(nome);
+        String sigla = "SP";
+        estado.setSigla(sigla);
+
+        assertThat(estado.getNome(),is("Sao Paulo"));
+        assertThat(estado.getSigla(),is("SP"));
+        assertThat(estado.nome, is("Sao Paulo"));
         assertThat(estado.sigla, is("SP"));
     }
 

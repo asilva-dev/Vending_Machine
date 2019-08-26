@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d1f84807-348f-45c4-bda6-caa29d99c3bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Vending_Machine/Cidade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Vending_Machine/Cidade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Vending_Machine/Estado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Vending_Machine/Estado.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/ClienteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/ClienteTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cidade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ClienteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ClienteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/EstadoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/EstadoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Estado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/EstadoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/EstadoTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,16 +41,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClienteTest.AtribuirCidadeCliente">
-    <configuration name="CategoriaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Vending_Machine" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CategoriaTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.EstadoTest.CriarEstado">
     <configuration name="CategoriaTest.criarCategoria" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Vending_Machine" />
       <option name="PACKAGE_NAME" value="" />
@@ -80,6 +72,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EstadoTest.CriarEstado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Vending_Machine" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EstadoTest" />
+      <option name="METHOD_NAME" value="CriarEstado" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EstoqueTest.CriarProdutoEstoque" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Vending_Machine" />
       <option name="PACKAGE_NAME" value="" />
@@ -92,11 +94,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EstadoTest.CriarEstado" />
         <item itemvalue="JUnit.ClienteTest.AtribuirCidadeCliente" />
         <item itemvalue="JUnit.EstoqueTest.CriarProdutoEstoque" />
         <item itemvalue="JUnit.CidadeTest.CriarCidade" />
         <item itemvalue="JUnit.CategoriaTest.criarCategoria" />
-        <item itemvalue="JUnit.CategoriaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +119,7 @@
       <workItem from="1566588700462" duration="230000" />
       <workItem from="1566705098592" duration="686000" />
       <workItem from="1566706004999" duration="13004000" />
-      <workItem from="1566828644623" duration="2346000" />
+      <workItem from="1566828644623" duration="3338000" />
     </task>
     <servers />
   </component>
