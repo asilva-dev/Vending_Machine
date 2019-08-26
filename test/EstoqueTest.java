@@ -24,7 +24,7 @@ public class EstoqueTest{
             estoque.setProduto(produto);
             estoque.setCategoria(categoria);
             estoque.setSubcategoria(subcategoria);
-            Integer quantidade = 0;
+            Integer quantidade = 5;
             estoque.setQuantidade(quantidade);
 
             //Testando o "get" do produto {Get acessa o atributo 'pega'}

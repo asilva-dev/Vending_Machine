@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d1f84807-348f-45c4-bda6-caa29d99c3bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Vending_Machine/Cidade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Vending_Machine/Cidade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Vending_Machine/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Vending_Machine/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/CidadeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/CidadeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/ClienteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/ClienteTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cidade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/CategoriaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/CategoriaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/CidadeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/CidadeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/EstoqueTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/EstoqueTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/EstoqueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/EstoqueTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +38,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CidadeTest.CriarCidade">
+  <component name="RunManager" selected="JUnit.EstoqueTest.CriarProdutoEstoque">
     <configuration name="CategoriaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Vending_Machine" />
       <option name="PACKAGE_NAME" value="" />
@@ -94,10 +89,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EstoqueTest.CriarProdutoEstoque" />
         <item itemvalue="JUnit.CidadeTest.CriarCidade" />
         <item itemvalue="JUnit.CategoriaTest.criarCategoria" />
         <item itemvalue="JUnit.CategoriaTest" />
-        <item itemvalue="JUnit.EstoqueTest.CriarProdutoEstoque" />
         <item itemvalue="JUnit.EstoqueTest" />
       </list>
     </recent_temporary>
@@ -118,7 +113,7 @@
       <workItem from="1566476339790" duration="601000" />
       <workItem from="1566588700462" duration="230000" />
       <workItem from="1566705098592" duration="686000" />
-      <workItem from="1566706004999" duration="11742000" />
+      <workItem from="1566706004999" duration="13004000" />
     </task>
     <servers />
   </component>
