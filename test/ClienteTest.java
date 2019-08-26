@@ -5,7 +5,7 @@ import static org.junit.Assert.assertThat;
 public class ClienteTest {
     @Test
     public void CriarNovoCliente (){
-        Cliente cliente = new Cliente();
+        Cliente cliente = new Cliente(); //Objeto
         cliente.nome   = "Lívia Eduarda";
         cliente.pais   = "Brasil";
         cliente.idade  = 11;
@@ -18,15 +18,20 @@ public class ClienteTest {
         cliente.estado = estado;
         cliente.cidade = cidade;
 
+        String nome = "Lívia Eduarda";
+        cliente.setNome(nome);
+        Integer idade = 11;
+        cliente.setIdade(idade);
+        String pais = "Brasil";
+        cliente.setPais(pais);
         cliente.setEstado(estado);
         cliente.setCidade(cidade);
 
-
-        assertThat(cliente.nome, is("Lívia Eduarda"));
-        assertThat(cliente.pais, is("Brasil"));
-        assertThat(cliente.idade, is(11));
+        assertThat(cliente.getNome(), is("Lívia Eduarda"));
+        assertThat(cliente.getIdade(), is(11));
         assertThat(cliente.getEstado().nome, is("São Paulo"));
         assertThat(cliente.getCidade().nome, is("Guarulhos"));
+        assertThat(cliente.getPais(), is("Brasil"));
     }
 
     @Test
@@ -42,6 +47,10 @@ public class ClienteTest {
         Cliente cliente = new Cliente();
         Cidade cidade = new Cidade();
         cidade.nome = "Guarulhos";
+
+        /*cliente.setCidade(cidade);
+        assertThat(cliente.getCidade().nome, is("Guarulhos")); */
+
         assertThat(cidade.nome, is("Guarulhos"));
     }
 
@@ -50,6 +59,10 @@ public class ClienteTest {
         Cliente cliente = new Cliente();
         Estado estado = new Estado();
         estado.sigla = "SP";
+
+        /*cliente.setEstado(estado);
+        assertThat(cliente.getEstado().nome, is("SP")); */
+
         assertThat(estado.sigla, is("SP"));
     }
 
@@ -57,6 +70,7 @@ public class ClienteTest {
     public void AtribuirPaisCliente(){
         Cliente cliente = new Cliente();
         cliente.setPais("Brasil");
+
         assertThat(cliente.pais, is("Brasil"));
         assertThat(cliente.getPais(), is("Brasil"));
     }
