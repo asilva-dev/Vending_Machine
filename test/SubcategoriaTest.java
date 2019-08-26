@@ -1,4 +1,5 @@
 import org.junit.Test;
+import org.junit.internal.builders.JUnit3Builder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,12 +12,20 @@ public class SubcategoriaTest {
     @Test
     public void criarSubcategoria(){
         Subcategoria subcategoria = new Subcategoria();
-        subcategoria.unidMedida = "Liquido";
-
         Categoria categoria = new Categoria(); //Objeto
+
+        subcategoria.unidMedida = "Liquido";
         categoria.tipo = "Alimenticio";
 
+        String unidMedida = "Liquido";
+        subcategoria.setUnidMedida(unidMedida);
+        subcategoria.setCategoria(categoria);
+
+        assertThat(subcategoria.getUnidMedida(),is("Liquido"));
+        assertThat(subcategoria.getCategoria().tipo,is("Alimenticio"));
         subcategoria.categoria = categoria; //amarrando a categoria na subcategoria
+
+
     }
 
     @Test
