@@ -26,7 +26,8 @@ public class ProdutoTest {
     @Test
     public void atribuirNomeProduto(){
         Produto produto = new Produto();
-        produto.setNome("suco");
+        String nome = "suco";
+        produto.setNome(nome);
         assertThat(produto.nome, is("suco"));
         assertThat(produto.getNome(), is("suco"));
     }
@@ -35,6 +36,8 @@ public class ProdutoTest {
     public void atribuirPrecoProduto(){
         Produto produto = new Produto();
         produto.setPreco(10.40);
+        Double preco = 10.40;
+        produto.setPreco(preco);
         assertThat(produto.preco, is(10.40));
         assertThat(produto.getPreco(), is(10.40));
     }
