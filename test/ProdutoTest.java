@@ -8,7 +8,7 @@ public class ProdutoTest {
     @Test
     public void criarNovoProduto() {
         Produto produto = new Produto();
-        produto.nome = "Suco de Frutas Vermelhas";
+        produto.setNome("Suco de Frutas Vermelhas");
         produto.preco = 10.40;
 
         Categoria categoria = new Categoria();
@@ -19,7 +19,7 @@ public class ProdutoTest {
         produto.categoria = categoria;
         produto.subcategoria = subcategoria;
 
-        assertThat(produto.nome, is("Suco de Frutas Vermelhas"));
+        assertThat(produto.getNome(), is("Suco de Frutas Vermelhas"));
         assertThat(produto.preco, is(10.40));
     }
 
@@ -28,7 +28,7 @@ public class ProdutoTest {
         Produto produto = new Produto();
         String nome = "suco";
         produto.setNome(nome);
-        assertThat(produto.nome, is("suco"));
+
         assertThat(produto.getNome(), is("suco"));
     }
 

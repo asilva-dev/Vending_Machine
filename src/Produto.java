@@ -1,6 +1,6 @@
 public class Produto {
 
-    String nome;
+    private String nome;
     Double preco;
     Categoria categoria; //Objeto categoria
     Subcategoria subcategoria; //Objeto categoria

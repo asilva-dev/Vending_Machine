@@ -14,9 +14,9 @@ public class Cidade {
         return this.nome;
     }
 
-    public void setEstado(Cidade estado) {
+    public void setEstado(Estado estado) {
 
-        this.nome = nome;
+        this.estado = estado;
     }
 
     public Estado getEstado(){

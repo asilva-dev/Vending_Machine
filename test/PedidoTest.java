@@ -13,12 +13,12 @@ public class PedidoTest {
 
         cliente.nome = "Livia";
         pedido.cliente = cliente;
-        produto.nome = "Suco de Frutas Vermelhas";
+        produto.setNome("Suco de Frutas Vermelhas");
 
         pedido.setProduto(produto);
         pedido.setCliente(cliente);
 
         assertThat(pedido.getCliente().nome,is("Livia"));
-        assertThat(pedido.getProduto().nome, is("Suco de Frutas Vermelhas"));
+        assertThat(pedido.getProduto().getNome(), is("Suco de Frutas Vermelhas"));
     }
 }

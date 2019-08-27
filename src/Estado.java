@@ -23,7 +23,9 @@ public class Estado {
     }
 
 
-    List<Cidade> cidades;
+    ArrayList<Cidade> cidades = new ArrayList<Cidade>();
+
+
 
 
 }

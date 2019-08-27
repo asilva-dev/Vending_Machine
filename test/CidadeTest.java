@@ -19,7 +19,7 @@ public class CidadeTest {
         cidade.setNome(cidade);
         assertThat(cidade.getNome(), is("Guarulhos"));
 
-        cidade.setEstado(cidade);
+        cidade.setEstado(estado);
         assertThat(cidade.getEstado(), is(estado));
 
     }

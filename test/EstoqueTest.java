@@ -7,7 +7,7 @@ public class EstoqueTest{
     @Test
     public void CriarProdutoEstoque() {
             Produto produto = new Produto(); //novo produto da classe "Produto"
-            produto.nome = "Suco de Frutas Vermelhas";
+            produto.setNome("Suco de Frutas Vermelhas");
 
             Estoque estoque = new Estoque();
             estoque.produto = produto;
@@ -28,7 +28,7 @@ public class EstoqueTest{
             estoque.setQuantidade(quantidade);
 
             //Testando o "get" do produto {Get acessa o atributo 'pega'}
-            assertThat(estoque.getProduto().nome, is("Suco de Frutas Vermelhas"));
+            assertThat(estoque.getProduto().getNome(), is("Suco de Frutas Vermelhas"));
             assertThat(estoque.getCategoria().tipo, is("Alimenticio"));
             assertThat(estoque.getSubcategoria().unidMedida, is("Liquido"));
             assertThat(estoque.getQuantidade(), is(5));

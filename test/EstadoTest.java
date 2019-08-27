@@ -21,8 +21,18 @@ public class EstadoTest {
         assertThat(estado.sigla, is("SP"));
     }
 
+    @Test
+    public void criarListaCidadesPorEstado(){
+        Estado estado = new Estado();
+        Cidade cidade = new Cidade();
 
+        estado.nome = "Sao Paulo";
+        cidade.nome = "Guarulhos";
+        cidade.setEstado(estado);
+        estado.cidades.add(cidade); //Colocar o add dentro de um método de incluir cidade
 
-
-
+        //Verificando se a cidade está no indice chamado
+        assertThat(estado.cidades.get(0).nome,is("Guarulhos"));
+        assertThat(estado.cidades.get(0).estado.nome,is("Sao Paulo"));
+    }
 }
