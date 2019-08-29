@@ -1,7 +1,7 @@
 public class Subcategoria {
 
-    String unidMedida;
-    Categoria categoria; //objeto
+    private String unidMedida;
+    private Categoria categoria; //objeto
 
     public String getUnidMedida(){
         return this.unidMedida;

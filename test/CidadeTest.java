@@ -21,7 +21,6 @@ public class CidadeTest {
 
         cidade.setEstado(estado);
         assertThat(cidade.getEstado(), is(estado));
-
     }
 
     @Test

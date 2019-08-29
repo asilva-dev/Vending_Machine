@@ -13,10 +13,10 @@ public class EstoqueTest{
             estoque.produto = produto;
 
             Categoria categoria = new Categoria(); //novo produto da classe "Categoria"
-            categoria.tipo = "Alimenticio";
+            categoria.setTipo("Alimenticio");
 
             Subcategoria subcategoria = new Subcategoria(); //novo produto da classe "Subcategoria"
-            subcategoria.unidMedida = "Liquido";
+            subcategoria.setUnidMedida("Liquido");
 
             estoque.quantidade = 5;
 
@@ -29,8 +29,8 @@ public class EstoqueTest{
 
             //Testando o "get" do produto {Get acessa o atributo 'pega'}
             assertThat(estoque.getProduto().getNome(), is("Suco de Frutas Vermelhas"));
-            assertThat(estoque.getCategoria().tipo, is("Alimenticio"));
-            assertThat(estoque.getSubcategoria().unidMedida, is("Liquido"));
+            assertThat(estoque.getCategoria(), is("Alimenticio"));
+            assertThat(estoque.getSubcategoria(), is("Liquido"));
             assertThat(estoque.getQuantidade(), is(5));
         }
     }

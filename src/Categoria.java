@@ -1,6 +1,6 @@
 public class Categoria {
 
-    String tipo;
+    private String tipo;
 
     public String getTipo() {
         return this.tipo;

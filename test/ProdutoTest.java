@@ -7,20 +7,21 @@ public class ProdutoTest {
 
     @Test
     public void criarNovoProduto() {
+        //acessando os métodos
         Produto produto = new Produto();
         produto.setNome("Suco de Frutas Vermelhas");
-        produto.preco = 10.40;
+        produto.setPreco(10.40);
 
         Categoria categoria = new Categoria();
-        categoria.tipo = "Alimenticio";
+        categoria.setTipo("Alimenticio");
 
         Subcategoria subcategoria = new Subcategoria();
-        subcategoria.unidMedida = "Liquido";
-        produto.categoria = categoria;
-        produto.subcategoria = subcategoria;
+        subcategoria.setUnidMedida("Liquido");
+        produto.setCategoria(categoria);
+        produto.setSubcategoria(subcategoria);
 
         assertThat(produto.getNome(), is("Suco de Frutas Vermelhas"));
-        assertThat(produto.preco, is(10.40));
+        assertThat(produto.getPreco(), is(10.40));
     }
 
     @Test
@@ -38,7 +39,7 @@ public class ProdutoTest {
         produto.setPreco(10.40);
         Double preco = 10.40;
         produto.setPreco(preco);
-        assertThat(produto.preco, is(10.40));
+        assertThat(produto.getPreco(), is(10.40));
         assertThat(produto.getPreco(), is(10.40));
     }
 
@@ -46,21 +47,19 @@ public class ProdutoTest {
     public void AtribuirCategoriaProduto(){
         Produto produto = new Produto();
         Categoria categoria = new Categoria();
-        categoria.tipo = "Alimenticio";
-        produto.categoria = categoria;
+        categoria.setTipo("Alimenticio");
         produto.setCategoria(categoria);
-        assertThat(categoria.tipo, is("Alimenticio"));
-        assertThat(produto.getCategoria().tipo, is("Alimenticio")); //pegando o tipo do objeto categoria que está dentro de produto
+        produto.setCategoria(categoria);
+        assertThat(categoria.getTipo(), is("Alimenticio"));
     }
 
     @Test
     public void AtribuirSubcategoriaProduto(){
         Produto produto = new Produto();
         Subcategoria subcategoria = new Subcategoria();
-        subcategoria.unidMedida = "Liquido";
-        produto.subcategoria = subcategoria;
+        subcategoria.setUnidMedida("Liquido");
         produto.setSubcategoria(subcategoria);
-        assertThat(subcategoria.unidMedida, is ("Liquido"));
-        assertThat(produto.getSubcategoria().unidMedida, is("Liquido"));
+        produto.setSubcategoria(subcategoria);
+        assertThat(subcategoria.getUnidMedida(), is ("Liquido"));
     }
 }

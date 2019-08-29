@@ -14,16 +14,16 @@ public class SubcategoriaTest {
         Subcategoria subcategoria = new Subcategoria();
         Categoria categoria = new Categoria(); //Objeto
 
-        subcategoria.unidMedida = "Liquido";
-        categoria.tipo = "Alimenticio";
+        subcategoria.setUnidMedida("Liquido");
+        categoria.setTipo("Alimenticio");
 
         String unidMedida = "Liquido";
         subcategoria.setUnidMedida(unidMedida);
         subcategoria.setCategoria(categoria);
 
         assertThat(subcategoria.getUnidMedida(),is("Liquido"));
-        assertThat(subcategoria.getCategoria().tipo,is("Alimenticio"));
-        subcategoria.categoria = categoria; //amarrando a categoria na subcategoria
+        assertThat(subcategoria.getCategoria(),is("Alimenticio"));
+        subcategoria.setCategoria(categoria); //amarrando a categoria na subcategoria
 
 
     }
@@ -32,11 +32,11 @@ public class SubcategoriaTest {
     public void retornarListaSubcategorias(){
         List<Subcategoria> subcategorias = new ArrayList();
         Subcategoria subcategoria = new Subcategoria();
-        subcategoria.unidMedida = "Liquido";
+        subcategoria.setUnidMedida("Liquido");
 
         Categoria categoria = new Categoria(); //Objeto
-        categoria.tipo = "Alimenticio";
-        subcategoria.categoria = categoria;
+        categoria.setTipo("Alimenticio");
+        subcategoria.setCategoria(categoria);
 
         subcategorias.add(subcategoria);
 

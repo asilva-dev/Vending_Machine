@@ -32,10 +32,7 @@ public class Cliente {
         this.pais = pais;
     }
 
-    public String getPais() {
-        return pais;
-    }
-
+    public String getPais() {return pais;}
     public void setIdade(Integer idade) {
         this.idade = idade;
     }
