@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d1f84807-348f-45c4-bda6-caa29d99c3bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/EstoqueTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/EstoqueTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/EstoqueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/EstoqueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/PedidoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/PedidoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/PedidoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/PedidoTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,16 +38,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EstoqueTest.CriarProdutoEstoque">
-    <configuration name="CidadeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Vending_Machine" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CidadeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PedidoTest.CriarNovoPedido">
     <configuration name="EstadoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Vending_Machine" />
       <option name="PACKAGE_NAME" value="" />
@@ -87,13 +78,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PedidoTest.CriarNovoPedido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Vending_Machine" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PedidoTest" />
+      <option name="METHOD_NAME" value="CriarNovoPedido" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PedidoTest.CriarNovoPedido" />
         <item itemvalue="JUnit.EstoqueTest.CriarProdutoEstoque" />
         <item itemvalue="JUnit.EstadoTest.criarListaCidadesPorEstado" />
         <item itemvalue="JUnit.EstadoTest" />
         <item itemvalue="JUnit.EstadoTest.CriarEstado" />
-        <item itemvalue="JUnit.CidadeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +122,7 @@
       <workItem from="1566934996497" duration="229000" />
       <workItem from="1566997066529" duration="607000" />
       <workItem from="1567104047940" duration="4035000" />
-      <workItem from="1567434060418" duration="6656000" />
+      <workItem from="1567434060418" duration="6830000" />
     </task>
     <servers />
   </component>

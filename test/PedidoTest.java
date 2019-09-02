@@ -11,14 +11,14 @@ public class PedidoTest {
         Cliente cliente = new Cliente();
         Produto produto = new Produto();
 
-        cliente.nome = "Livia";
-        pedido.cliente = cliente;
+        cliente.setNome("Livia");
+        pedido.setCliente(cliente);
         produto.setNome("Suco de Frutas Vermelhas");
 
         pedido.setProduto(produto);
         pedido.setCliente(cliente);
 
-        assertThat(pedido.getCliente().nome,is("Livia"));
+        assertThat(pedido.getCliente().getNome(),is("Livia"));
         assertThat(pedido.getProduto().getNome(), is("Suco de Frutas Vermelhas"));
     }
 }
