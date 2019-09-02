@@ -4,7 +4,7 @@ public class Cidade {
     Estado estado; //criando objeto Estado
 
 
-    public void setNome(Cidade cidade) {
+    public void setNome(String nome) {
 
         this.nome = nome;
     }

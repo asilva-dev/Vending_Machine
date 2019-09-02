@@ -13,6 +13,6 @@ public class CategoriaTest {
         categoria.setTipo(tipo);
 
         assertThat(categoria.getTipo(), is("Alimenticio"));
-        //assertThat(categoria.tipo, is("Alimenticio"));
+
     }
 }
