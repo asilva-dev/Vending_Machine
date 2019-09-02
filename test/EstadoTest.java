@@ -7,18 +7,11 @@ public class EstadoTest {
     @Test
     public void CriarEstado(){
         Estado estado = new Estado(); //Objeto Estado
-        estado.nome = "Sao Paulo";
-        estado.sigla = "SP";
-
-        String nome = "Sao Paulo";
-        estado.setNome(nome);
-        String sigla = "SP";
-        estado.setSigla(sigla);
+        estado.setNome("Sao Paulo");
+        estado.setSigla("SP");
 
         assertThat(estado.getNome(),is("Sao Paulo"));
         assertThat(estado.getSigla(),is("SP"));
-        assertThat(estado.nome, is("Sao Paulo"));
-        assertThat(estado.sigla, is("SP"));
     }
 
     @Test
@@ -26,13 +19,13 @@ public class EstadoTest {
         Estado estado = new Estado();
         Cidade cidade = new Cidade();
 
-        estado.nome = "Sao Paulo";
-        cidade.nome = "Guarulhos";
+        estado.setNome("Sao Paulo");
+        cidade.setNome("Guarulhos");
         cidade.setEstado(estado);
         estado.cidades.add(cidade); //Colocar o add dentro de um método de incluir cidade
 
         //Verificando se a cidade está no indice chamado
-        assertThat(estado.cidades.get(0).nome,is("Guarulhos"));
-        assertThat(estado.cidades.get(0).estado.nome,is("Sao Paulo"));
+        assertThat(estado.cidades.get(0).getNome(),is("Guarulhos"));
+        assertThat(estado.cidades.get(0).estado.getNome(),is("Sao Paulo"));
     }
 }

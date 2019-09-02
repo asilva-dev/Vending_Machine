@@ -3,13 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d1f84807-348f-45c4-bda6-caa29d99c3bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Vending_Machine/Cidade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Vending_Machine/Cidade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Vending_Machine/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Vending_Machine/Produto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Vending_Machine/Estado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Vending_Machine/Estado.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/CidadeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/CidadeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cidade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/CategoriaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/CategoriaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/CidadeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/CidadeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/EstadoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/EstadoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Estado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/EstadoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/EstadoTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +41,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CidadeTest">
+  <component name="RunManager" selected="JUnit.EstadoTest.criarListaCidadesPorEstado">
     <configuration name="CidadeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Vending_Machine" />
       <option name="PACKAGE_NAME" value="" />
@@ -72,20 +70,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProdutoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EstadoTest.CriarEstado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Vending_Machine" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProdutoTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="EstadoTest" />
+      <option name="METHOD_NAME" value="CriarEstado" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProdutoTest.AtribuirCategoriaProduto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EstadoTest.criarListaCidadesPorEstado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Vending_Machine" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProdutoTest" />
-      <option name="METHOD_NAME" value="AtribuirCategoriaProduto" />
+      <option name="MAIN_CLASS_NAME" value="EstadoTest" />
+      <option name="METHOD_NAME" value="criarListaCidadesPorEstado" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,11 +92,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EstadoTest.criarListaCidadesPorEstado" />
+        <item itemvalue="JUnit.EstadoTest" />
+        <item itemvalue="JUnit.EstadoTest.CriarEstado" />
         <item itemvalue="JUnit.CidadeTest" />
         <item itemvalue="JUnit.CidadeTest.CriarCidade" />
-        <item itemvalue="JUnit.ProdutoTest" />
-        <item itemvalue="JUnit.ProdutoTest.AtribuirCategoriaProduto" />
-        <item itemvalue="JUnit.EstadoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -125,7 +124,7 @@
       <workItem from="1566934996497" duration="229000" />
       <workItem from="1566997066529" duration="607000" />
       <workItem from="1567104047940" duration="4035000" />
-      <workItem from="1567434060418" duration="5412000" />
+      <workItem from="1567434060418" duration="6185000" />
     </task>
     <servers />
   </component>
