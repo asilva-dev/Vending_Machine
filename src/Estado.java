@@ -1,12 +1,11 @@
-import com.sun.org.apache.bcel.internal.generic.RETURN;
-
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class Estado {
 
-    String sigla, nome;
+    private String sigla, nome;
+
 
     public void setSigla(String sigla){
 
@@ -18,8 +17,10 @@ public class Estado {
         return this.sigla;
     }
 
-    public void setNome(String nome) {
-
+    public void setNome(String nome) throws NomeEstadoInvalidoException{
+        if(nome.matches("^[0-9]*$") || nome.trim().isEmpty()) { //verificando se tem numeros na string (matches verifica o padrão)
+            throw new NomeEstadoInvalidoException();
+        }
         this.nome = nome;
     }
     public String getNome() {
@@ -27,8 +28,17 @@ public class Estado {
         return this.nome;
     }
 
+    Cidade cidade = new Cidade();
 
+    private List<Cidade> cidades = new ArrayList<Cidade>();
 
-    ArrayList<Cidade> cidades = new ArrayList<Cidade>();
+    public List<Cidade> getCidades() {
+        return this.cidades;
+    }
+
+    //encapsulando a cidade
+    public void setCidade(Cidade cidade){
+        this.cidades.add(cidade);
+    }
 
 }

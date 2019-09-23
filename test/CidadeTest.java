@@ -1,4 +1,3 @@
-
 import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +7,7 @@ import static org.junit.Assert.assertThat;
 public class CidadeTest {
 
     @Test
-    public void CriarCidade(){
+    public void CriarCidade() throws NomeEstadoInvalidoException{
         Cidade cidade = new Cidade(); //Objeto
         cidade.setNome("Guarulhos");
 
@@ -23,7 +22,7 @@ public class CidadeTest {
     }
 
     @Test
-    public void RetornarListaCidades(){
+    public void RetornarListaCidades() throws Exception{
         List<Cidade> cidades = new ArrayList(); //criando o arraylist
         //declarando o estado
         Estado estado = new Estado();

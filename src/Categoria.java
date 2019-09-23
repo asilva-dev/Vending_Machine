@@ -3,6 +3,7 @@ public class Categoria {
     private String tipo;
 
     public String getTipo() {
+
         return this.tipo;
     }
 

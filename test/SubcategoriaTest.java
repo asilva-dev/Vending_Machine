@@ -22,10 +22,8 @@ public class SubcategoriaTest {
         subcategoria.setCategoria(categoria);
 
         assertThat(subcategoria.getUnidMedida(),is("Liquido"));
-        assertThat(subcategoria.getCategoria(),is("Alimenticio"));
+        assertThat(subcategoria.getCategoria().getTipo(),is("Alimenticio"));
         subcategoria.setCategoria(categoria); //amarrando a categoria na subcategoria
-
-
     }
 
     @Test

@@ -10,7 +10,6 @@ public class Produto {
     }
 
     public String getNome(){
-
         return nome;
     }
 

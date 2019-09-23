@@ -4,7 +4,6 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 public class ProdutoTest {
-
     @Test
     public void criarNovoProduto() {
         //acessando os métodos
@@ -29,7 +28,6 @@ public class ProdutoTest {
         Produto produto = new Produto();
         String nome = "suco";
         produto.setNome(nome);
-
         assertThat(produto.getNome(), is("suco"));
     }
 

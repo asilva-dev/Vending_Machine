@@ -1,9 +1,9 @@
 public class Cliente {
 
-    String nome, pais;
-    Integer idade;
-    Estado estado; //Objeto estado
-    Cidade cidade; //Objeto Cidade
+    private String nome, pais;
+    private Integer idade;
+    private Estado estado; //Objeto estado
+    private Cidade cidade; //Objeto Cidade
 
     public void setNome(String nome) {
         this.nome = nome;

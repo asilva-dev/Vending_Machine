@@ -1,7 +1,7 @@
 public class Cidade {
 
-    String nome; //Alterei o tipo de String para Cidade
-    Estado estado; //criando objeto Estado
+    private String nome; //Alterei o tipo de String para Cidade
+    private Estado estado; //criando objeto Estado
 
 
     public void setNome(String nome) {

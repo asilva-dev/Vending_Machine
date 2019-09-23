@@ -1,8 +1,8 @@
 public class Pedido {
 
     //Atributos do pedido
-    Cliente cliente;
-    Produto produto;
+    private Cliente cliente;
+    private Produto produto;
 
 
     public Cliente getCliente(){
