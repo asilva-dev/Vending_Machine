@@ -8,6 +8,7 @@ public class Categoria {
     }
 
     public void setTipo(String tipo) {
+
         this.tipo = tipo;
     }
 }

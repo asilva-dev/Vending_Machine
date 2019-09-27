@@ -10,7 +10,7 @@ import static org.junit.Assert.assertThat;
 public class SubcategoriaTest {
 
     @Test
-    public void criarSubcategoria(){
+    public void criarSubcategoria() throws UnidadeMedidaInvalidaException{
         Subcategoria subcategoria = new Subcategoria();
         Categoria categoria = new Categoria(); //Objeto
 
@@ -27,7 +27,7 @@ public class SubcategoriaTest {
     }
 
     @Test
-    public void retornarListaSubcategorias(){
+    public void retornarListaSubcategorias() throws UnidadeMedidaInvalidaException{
         List<Subcategoria> subcategorias = new ArrayList();
         Subcategoria subcategoria = new Subcategoria();
         subcategoria.setUnidMedida("Liquido");

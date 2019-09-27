@@ -5,7 +5,7 @@ import static org.junit.Assert.assertThat;
 public class EstoqueTest{
 
     @Test
-    public void CriarProdutoEstoque() {
+    public void CriarProdutoEstoque() throws NomeProdutoInvalidoException, UnidadeMedidaInvalidaException, QuatidadeEstoqueInvalidaException{
             Estoque estoque = new Estoque();
 
             Produto produto = new Produto(); //novo produto da classe "Produto"
@@ -30,4 +30,18 @@ public class EstoqueTest{
             assertThat(estoque.getSubcategoria().getUnidMedida(), is("Liquido"));
             assertThat(estoque.getQuantidade(), is(5));
         }
+
+    @Test (expected = NomeProdutoInvalidoException.class)
+    public void invalidarNomeProdutoQuandoNumero() throws NomeProdutoInvalidoException{  //em algum fluxo retornara uma Exception
+        Produto produto = new Produto ();
+        produto.setNome("10");
+    }
+
+    @Test (expected = NomeProdutoInvalidoException.class)
+    public void invalidarNomeProdutoQuandoVazio() throws NomeProdutoInvalidoException{
+        Produto produto = new Produto ();
+        produto.setNome("");
+    }
+
+
     }

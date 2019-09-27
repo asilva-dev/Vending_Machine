@@ -5,7 +5,10 @@ public class Cliente {
     private Estado estado; //Objeto estado
     private Cidade cidade; //Objeto Cidade
 
-    public void setNome(String nome) {
+    public void setNome(String nome) throws NomeClienteInvalidoException {
+        if(nome.matches("^[0-9]*$") || nome.trim().isEmpty()) { //verificando se tem numeros na string (matches verifica o padrão)
+            throw new NomeClienteInvalidoException();
+        }
         this.nome = nome;
     }
     public String getNome() {
@@ -33,11 +36,16 @@ public class Cliente {
     }
 
     public String getPais() {return pais;}
-    public void setIdade(Integer idade) {
+
+    public void setIdade(Integer idade)throws IdadeClienteInvalidaException {
+        if(idade.equals("^[a-zA-Z]*$")){ //verificando se tem numeros na string (matches verifica o padrão)
+            throw new IdadeClienteInvalidaException();
+        }
         this.idade = idade;
     }
 
-    public Integer getIdade() {
+    public Integer getIdade()  {
+
         return idade;
     }
 }

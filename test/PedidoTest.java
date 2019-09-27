@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 public class PedidoTest {
 
     @Test
-    public void CriarNovoPedido(){
+    public void CriarNovoPedido() throws NomeClienteInvalidoException, NomeProdutoInvalidoException{
         Pedido pedido = new Pedido();
         Cliente cliente = new Cliente();
         Produto produto = new Produto();

@@ -5,7 +5,7 @@ import static org.junit.Assert.assertThat;
 
 public class ProdutoTest {
     @Test
-    public void criarNovoProduto() {
+    public void criarNovoProduto() throws NomeProdutoInvalidoException, PrecoProdutoInvalidoException, UnidadeMedidaInvalidaException{
         //acessando os métodos
         Produto produto = new Produto();
         produto.setNome("Suco de Frutas Vermelhas");
@@ -24,7 +24,7 @@ public class ProdutoTest {
     }
 
     @Test
-    public void atribuirNomeProduto(){
+    public void atribuirNomeProduto() throws NomeProdutoInvalidoException{
         Produto produto = new Produto();
         String nome = "suco";
         produto.setNome(nome);
@@ -32,7 +32,7 @@ public class ProdutoTest {
     }
 
     @Test
-    public void atribuirPrecoProduto(){
+    public void atribuirPrecoProduto() throws PrecoProdutoInvalidoException{
         Produto produto = new Produto();
         produto.setPreco(10.40);
         Double preco = 10.40;
@@ -52,7 +52,7 @@ public class ProdutoTest {
     }
 
     @Test
-    public void AtribuirSubcategoriaProduto(){
+    public void AtribuirSubcategoriaProduto() throws UnidadeMedidaInvalidaException{
         Produto produto = new Produto();
         Subcategoria subcategoria = new Subcategoria();
         subcategoria.setUnidMedida("Liquido");

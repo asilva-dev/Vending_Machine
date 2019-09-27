@@ -5,17 +5,16 @@ import static org.junit.Assert.assertThat;
 
 public class EstadoTest {
     @Test
-    public void CriarEstado() throws Exception{
+    public void CriarEstado() throws NomeEstadoInvalidoException, SiglaEstadoInvalidaException{
         Estado estado = new Estado(); //Objeto Estado
         estado.setNome("Sao Paulo");
         estado.setSigla("SP");
-
         assertThat(estado.getNome(),is("Sao Paulo"));
         assertThat(estado.getSigla(),is("SP"));
     }
 
     @Test
-    public void criarListaCidadesPorEstado()throws NomeEstadoInvalidoException{
+    public void criarListaCidadesPorEstado()throws NomeEstadoInvalidoException, NomeCidadeInvalidoException{
         Estado estado = new Estado();
         Cidade cidade = new Cidade();
 
@@ -39,7 +38,18 @@ public class EstadoTest {
     public void invalidarNomeEstadoQuandoVazio() throws NomeEstadoInvalidoException{
         Estado estado = new Estado();
         estado.setNome("");
+    }
 
+    @Test (expected = SiglaEstadoInvalidaException.class)
+    public void invalidarSiglaEstadoQuandoVazia() throws SiglaEstadoInvalidaException{
+        Estado estado = new Estado();
+        estado.setSigla("");
+    }
+
+    @Test (expected = SiglaEstadoInvalidaException.class)
+    public void invalidarSiglatadoQuandoNumero() throws SiglaEstadoInvalidaException{  //em algum fluxo retornara uma Exception
+        Estado estado = new Estado();
+        estado.setSigla("10");
     }
 
 }

@@ -7,7 +7,7 @@ import static org.junit.Assert.assertThat;
 public class CidadeTest {
 
     @Test
-    public void CriarCidade() throws NomeEstadoInvalidoException{
+    public void CriarCidade() throws NomeCidadeInvalidoException, NomeEstadoInvalidoException, SiglaEstadoInvalidaException{
         Cidade cidade = new Cidade(); //Objeto
         cidade.setNome("Guarulhos");
 
@@ -20,9 +20,32 @@ public class CidadeTest {
         assertThat(cidade.getNome(), is("Guarulhos"));
         assertThat(cidade.getEstado(), is(estado));
     }
+    @Test (expected = NomeCidadeInvalidoException.class)
+    public void invalidarNomeCidadeQuandoNumero() throws NomeCidadeInvalidoException{  //em algum fluxo retornara uma Exception
+        Cidade cidade = new Cidade();
+        cidade.setNome("10");
+    }
 
+    @Test (expected = NomeCidadeInvalidoException.class)
+    public void invalidarNomeCidadeQuandoVazio() throws NomeCidadeInvalidoException{
+        Cidade cidade = new Cidade();
+        cidade.setNome("");
+    }
+
+    @Test (expected = NomeEstadoInvalidoException.class)
+    public void invalidarNomeEstadoQuandoNumero()throws NomeEstadoInvalidoException{
+        Estado estado = new Estado();
+        estado.setNome("10");
+    }
+
+    @Test(expected = NomeEstadoInvalidoException.class)
+    public void invalidarNomeEstadoQuandoVazio()throws NomeEstadoInvalidoException{
+        Estado estado = new Estado();
+        estado.setNome("");
+    }
+    
     @Test
-    public void RetornarListaCidades() throws Exception{
+    public void RetornarListaCidades() throws NomeEstadoInvalidoException, NomeCidadeInvalidoException, SiglaEstadoInvalidaException{
         List<Cidade> cidades = new ArrayList(); //criando o arraylist
         //declarando o estado
         Estado estado = new Estado();
@@ -36,6 +59,6 @@ public class CidadeTest {
         cidades.add(cidade); //add a cidade no arraylist
         assertThat(cidades.isEmpty(), is(false)); //
         assertThat(cidades.contains(cidade), is(true));
-
     }
+
 }

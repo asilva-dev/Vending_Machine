@@ -4,7 +4,7 @@ import static org.junit.Assert.assertThat;
 
 public class ClienteTest {
     @Test
-    public void CriarNovoCliente () throws Exception{
+    public void CriarNovoCliente ()throws NomeClienteInvalidoException, NomeEstadoInvalidoException, NomeCidadeInvalidoException, IdadeClienteInvalidaException, SiglaEstadoInvalidaException{
         Cliente cliente = new Cliente(); //Objeto
         cliente.setNome("Lívia Eduarda");
         cliente.setPais("Brasil");
@@ -35,15 +35,26 @@ public class ClienteTest {
     }
 
     @Test
-    public void AtribuirNomeCliente(){
+    public void AtribuirNomeCliente() throws NomeClienteInvalidoException {
         Cliente cliente = new Cliente();
         cliente.setNome("Lívia Eduarda");
         assertThat(cliente.getNome(), is("Lívia Eduarda"));
         assertThat(cliente.getNome(), is("Lívia Eduarda"));
     }
+    @Test (expected = NomeClienteInvalidoException.class)
+    public void invalidarNomeClienteQuandoNumero() throws NomeClienteInvalidoException{  //em algum fluxo retornara uma Exception
+        Cliente cliente = new Cliente();
+        cliente.setNome("10");
+    }
+
+    @Test (expected = NomeClienteInvalidoException.class)
+    public void invalidarNomeClienteQuandoVazio() throws NomeClienteInvalidoException{
+        Cliente cliente = new Cliente();
+        cliente.setNome("");
+    }
 
     @Test
-    public void AtribuirCidadeCliente(){
+    public void AtribuirCidadeCliente() throws NomeCidadeInvalidoException{
         Cliente cliente = new Cliente();
         Cidade cidade = new Cidade();
         cidade.setNome("Guarulhos");
@@ -52,11 +63,10 @@ public class ClienteTest {
     }
 
     @Test
-    public void AtribuirEstadoCliente(){
-        Cliente cliente = new Cliente();
+    public void AtribuirEstadoCliente() throws SiglaEstadoInvalidaException{
+        Cliente cliente = new Cliente ();
         Estado estado = new Estado();
         estado.setSigla("SP");
-
         assertThat(estado.getSigla(), is("SP"));
     }
 
@@ -70,7 +80,7 @@ public class ClienteTest {
     }
 
     @Test
-    public void AtribuirIdadeCliente(){
+    public void AtribuirIdadeCliente() throws IdadeClienteInvalidaException{
         Cliente cliente = new Cliente();
         cliente.setIdade(11);
         assertThat(cliente.getIdade(), is(11));

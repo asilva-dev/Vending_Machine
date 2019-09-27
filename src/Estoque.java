@@ -31,7 +31,10 @@ public class Estoque {
         return this.quantidade;
     }
 
-    public void setQuantidade(Integer quantidade) {
+    public void setQuantidade(Integer quantidade) throws QuatidadeEstoqueInvalidaException {
+        if(quantidade.equals("^[a-zA-Z]*$")){ //verificando se tem numeros na string (matches verifica o padrão)
+            throw new QuatidadeEstoqueInvalidaException ();
+        }
         this.quantidade = quantidade;
     }
 }

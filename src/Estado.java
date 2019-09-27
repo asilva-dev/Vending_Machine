@@ -7,8 +7,10 @@ public class Estado {
     private String sigla, nome;
 
 
-    public void setSigla(String sigla){
-
+    public void setSigla(String sigla) throws SiglaEstadoInvalidaException{
+        if (sigla.matches("^[0-9]*$") || sigla.trim().isEmpty()){
+            throw  new SiglaEstadoInvalidaException();
+        }
         this.sigla = sigla;
     }
 
@@ -23,6 +25,7 @@ public class Estado {
         }
         this.nome = nome;
     }
+
     public String getNome() {
 
         return this.nome;
@@ -38,6 +41,7 @@ public class Estado {
 
     //encapsulando a cidade
     public void setCidade(Cidade cidade){
+
         this.cidades.add(cidade);
     }
 

@@ -1,5 +1,4 @@
 
 class NomeEstadoInvalidoException extends Exception{
 
-
 }
