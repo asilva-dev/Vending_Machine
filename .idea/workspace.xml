@@ -2,46 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1f84807-348f-45c4-bda6-caa29d99c3bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/IdadeClienteInvalidaException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NomeCidadeInvalidoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NomeClienteInvalidoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NomeProdutoInvalidoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PrecoProdutoInvalidoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuatidadeEstoqueInvalidaException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SiglaEstadoInvalidaException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UnidadeMedidaInvalidaException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Vending_Machine/Categoria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Vending_Machine/Categoria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Vending_Machine/Cidade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Vending_Machine/Cidade.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Vending_Machine/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Vending_Machine/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Vending_Machine/Estado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Vending_Machine/Estado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Vending_Machine/Estoque.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Vending_Machine/Estoque.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Vending_Machine/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Vending_Machine/Produto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Vending_Machine/Subcategoria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Vending_Machine/Subcategoria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/CategoriaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/CategoriaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/CidadeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/CidadeTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/ClienteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/ClienteTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/EstadoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/EstadoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/EstoqueTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/EstoqueTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/PedidoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/PedidoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/ProdutoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/ProdutoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Vending_Machine/SubcategoriaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Vending_Machine/SubcategoriaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Categoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cidade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Estado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Estoque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NomeEstadoInvalidoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NomeEstadoInvalidoException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Subcategoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Subcategoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/CategoriaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/CategoriaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/CidadeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/CidadeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/ClienteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ClienteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/EstadoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/EstadoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/EstoqueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/EstoqueTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/PedidoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/PedidoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ProdutoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ProdutoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SubcategoriaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/SubcategoriaTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in Vending_Machine">
+  <component name="RunManager" selected="JUnit.ProdutoTest">
     <configuration name="All in Vending_Machine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Vending_Machine" />
       <option name="PACKAGE_NAME" value="" />
@@ -92,19 +57,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EstoqueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CategoriaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Vending_Machine" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EstoqueTest" />
+      <option name="MAIN_CLASS_NAME" value="CategoriaTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PedidoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClienteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Vending_Machine" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PedidoTest" />
+      <option name="MAIN_CLASS_NAME" value="ClienteTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EstoqueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Vending_Machine" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EstoqueTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,22 +93,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubcategoriaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Vending_Machine" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SubcategoriaTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProdutoTest" />
+        <item itemvalue="JUnit.CategoriaTest" />
+        <item itemvalue="JUnit.ClienteTest" />
         <item itemvalue="JUnit.All in Vending_Machine" />
         <item itemvalue="JUnit.EstoqueTest" />
-        <item itemvalue="JUnit.ProdutoTest" />
-        <item itemvalue="JUnit.SubcategoriaTest" />
-        <item itemvalue="JUnit.PedidoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +139,14 @@
       <workItem from="1569511467442" duration="3887000" />
       <workItem from="1569598283798" duration="37000" />
       <workItem from="1569598339113" duration="1487000" />
-      <workItem from="1569599846079" duration="3769000" />
+      <workItem from="1569599846079" duration="4084000" />
+      <workItem from="1569620689450" duration="2666000" />
+      <workItem from="1569849742567" duration="197000" />
+      <workItem from="1572644405993" duration="899000" />
+      <workItem from="1573607971041" duration="121000" />
+      <workItem from="1573912735594" duration="61000" />
+      <workItem from="1574211628708" duration="101000" />
+      <workItem from="1575221149869" duration="882000" />
     </task>
     <servers />
   </component>

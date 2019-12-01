@@ -38,7 +38,7 @@ public class Cliente {
     public String getPais() {return pais;}
 
     public void setIdade(Integer idade)throws IdadeClienteInvalidaException {
-        if(idade.equals("^[a-zA-Z]*$")){ //verificando se tem numeros na string (matches verifica o padrão)
+        if(idade == null){ //verificando se tem numeros na string (matches verifica o padrão)
             throw new IdadeClienteInvalidaException();
         }
         this.idade = idade;

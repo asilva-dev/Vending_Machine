@@ -76,7 +76,6 @@ public class ClienteTest {
         cliente.setPais("Brasil");
 
         assertThat(cliente.getPais(), is("Brasil"));
-        assertThat(cliente.getPais(), is("Brasil"));
     }
 
     @Test
@@ -84,8 +83,9 @@ public class ClienteTest {
         Cliente cliente = new Cliente();
         cliente.setIdade(11);
         assertThat(cliente.getIdade(), is(11));
-        assertThat(cliente.getIdade(), is(11));
+
+        }
     }
 
-}
+
 
